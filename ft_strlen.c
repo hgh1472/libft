@@ -6,18 +6,18 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 14:07:06 by ghwang            #+#    #+#             */
-/*   Updated: 2023/11/27 23:01:15 by ghwang           ###   ########seoul.kr  */
+/*   Updated: 2023/12/01 15:29:08 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-    size_t cnt;
+	size_t	cnt;
 
-    cnt = 0;
-    while (*(s + cnt) != '\0')
-        cnt++;
-    return cnt;
+	cnt = 0;
+	while (*(s + cnt) != '\0')
+		cnt++;
+	return (cnt);
 }

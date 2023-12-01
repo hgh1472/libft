@@ -6,15 +6,15 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 14:05:37 by ghwang            #+#    #+#             */
-/*   Updated: 2023/11/26 21:45:05 by ghwang           ###   ########seoul.kr  */
+/*   Updated: 2023/12/01 15:36:08 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c < 127)
-        return (1);
-    return (0);
+	if (c >= 32 && c < 127)
+		return (1);
+	return (0);
 }

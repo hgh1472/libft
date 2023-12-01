@@ -6,13 +6,13 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 14:26:52 by ghwang            #+#    #+#             */
-/*   Updated: 2023/11/26 21:55:12 by ghwang           ###   ########seoul.kr  */
+/*   Updated: 2023/12/01 15:30:48 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }

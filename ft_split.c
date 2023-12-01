@@ -6,7 +6,7 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:02:57 by ghwang            #+#    #+#             */
-/*   Updated: 2023/11/27 23:00:18 by ghwang           ###   ########seoul.kr  */
+/*   Updated: 2023/12/01 15:45:23 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,16 @@ int	count_words(const char *s, char c)
 		{
 			cnt++;
 			while (s[i] != c && s[i])
-                i++;
+				i++;
 		}
 		else
 			while (s[i] == c)
-                i++;
+				i++;
 	}
 	return (cnt);
 }
 
-int	count_spells(const char *s, char c)
+int	c_spells(const char *s, char c)
 {
 	int	i;
 	int	cnt;
@@ -52,14 +52,17 @@ int	count_spells(const char *s, char c)
 	return (cnt);
 }
 
-void free_arr(char **arr, int first)
+void	free_arr(char **arr, int first)
 {
-	for (int i = 0; i < first; i++)
-		free(arr[i]);
+	int	i;
+
+	i = 0;
+	while (i < first)
+		free(arr[i++]);
 	free(arr);
 }
 
-char **insert(char **ans, char const *s, char c)
+char	**insert(char **ans, char const *s, char c)
 {
 	int	index1;
 	int	index2;
@@ -71,7 +74,7 @@ char **insert(char **ans, char const *s, char c)
 		if (*s != c)
 		{
 			index2 = 0;
-			ans[index1] = (char *)malloc(sizeof(char) * (count_spells(s, c) + 1));
+			ans[index1] = (char *)malloc(sizeof(char) * (c_spells(s, c) + 1));
 			if (ans[index1] == 0)
 			{
 				free_arr(ans, index1);
@@ -87,6 +90,7 @@ char **insert(char **ans, char const *s, char c)
 	ans[index1] = 0;
 	return (ans);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**ans;
@@ -98,6 +102,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	ans = insert(ans, s, c);
 	if (ans == 0)
-		return NULL;
+		return (NULL);
 	return (ans);
 }

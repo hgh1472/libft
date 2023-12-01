@@ -6,15 +6,15 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 17:45:28 by ghwang            #+#    #+#             */
-/*   Updated: 2023/11/26 21:48:15 by ghwang           ###   ########seoul.kr  */
+/*   Updated: 2023/12/01 15:40:00 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if ((char)c >= 'A' && (char)c <= 'Z')
-        c += 32;
-    return (c);
+	if ((char)c >= 'A' && (char)c <= 'Z')
+		c += 32;
+	return (c);
 }
