@@ -25,11 +25,11 @@ $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) -c $^ -I$(HEADER)
 
 clean :
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS)
 
 fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
 
-.PHONY : all clean fclean re bonus
+.PHONY : all clean fclean re
