@@ -6,15 +6,15 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 17:55:18 by ghwang            #+#    #+#             */
-/*   Updated: 2023/12/01 15:39:00 by ghwang           ###   ########.fr       */
+/*   Updated: 2023/12/03 12:32:23 by ghwang           ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	unsigned char	a;
 	unsigned char	b;
 

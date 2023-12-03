@@ -6,7 +6,7 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 20:25:54 by ghwang            #+#    #+#             */
-/*   Updated: 2023/12/01 15:53:25 by ghwang           ###   ########.fr       */
+/*   Updated: 2023/12/03 12:27:57 by ghwang           ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,14 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *src);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
-size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);

@@ -6,7 +6,7 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 15:07:12 by ghwang            #+#    #+#             */
-/*   Updated: 2023/12/01 15:36:35 by ghwang           ###   ########.fr       */
+/*   Updated: 2023/12/03 12:01:24 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	i = 0;
 	if (dst == NULL && src == NULL)
-    return (NULL);
+		return (NULL);
 	if (dst > src)
 	{
 		i = (int)len - 1;

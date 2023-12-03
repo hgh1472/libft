@@ -6,7 +6,7 @@
 /*   By: ghwang <ghwang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:04:05 by ghwang            #+#    #+#             */
-/*   Updated: 2023/12/01 15:30:25 by ghwang           ###   ########.fr       */
+/*   Updated: 2023/12/03 12:21:28 by ghwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (is_set(s1[start], set) && s1[start])
 		start++;
-	while (is_set(s1[end - 1], set) && end != (size_t)0)
+	while (end != (size_t)0 && is_set(s1[end - 1], set))
 		end--;
 	if (start == ft_strlen(s1))
 		start = 0;
